@@ -1,24 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AnimalShelter.Models
 {
-    public class Applicant
+    public partial class Applicant
     {
+        public Applicant()
+        {
+            Application = new HashSet<Application>();
+        }
+
         public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Zipcode { get; set; }
 
-        public string first_name { get; set; }
-
-        public string last_name { get; set; }
-
-        public string address { get; set; }
-
-        public string city { get; set; }
-
-        public string state { get; set; }
-
-        public string zipcode { get; set; }
+        public virtual ICollection<Application> Application { get; set; }
     }
 }

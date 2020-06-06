@@ -234,6 +234,48 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration.FileExtensions/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.4",
+          "Microsoft.Extensions.FileProviders.Physical": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "3.1.4",
+          "Microsoft.Extensions.Configuration.FileExtensions": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.UserSecrets/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Json": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.UserSecrets.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.UserSecrets.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.props": {},
+          "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.targets": {}
+        }
+      },
       "Microsoft.Extensions.DependencyInjection/3.1.4": {
         "type": "package",
         "dependencies": {
@@ -253,6 +295,40 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/3.1.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "3.1.4",
+          "Microsoft.Extensions.FileSystemGlobbing": "3.1.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/3.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {}
         }
       },
       "Microsoft.Extensions.Logging/3.1.4": {
@@ -2296,6 +2372,56 @@
         "microsoft.extensions.configuration.binder.nuspec"
       ]
     },
+    "Microsoft.Extensions.Configuration.FileExtensions/3.1.4": {
+      "sha512": "wgYJ6AxEuk7HkhUaiDwzX9LLVaeum5p8BS94xtMqgiCJ9Fxncy6z+jVHrkih+Ww6gBGbuPn5buu56MPWYlwBdg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.fileextensions/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "microsoft.extensions.configuration.fileextensions.3.1.4.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Json/3.1.4": {
+      "sha512": "PYSg1spPvu5V+qk3gpLdIKa0VHURlIAv1uInxkmIXUYbb3AlBk6wywlbFFUWf+CRWA62eD/LJnfpePODlbQ5CA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.json/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Json.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
+        "microsoft.extensions.configuration.json.3.1.4.nupkg.sha512",
+        "microsoft.extensions.configuration.json.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.UserSecrets/3.1.4": {
+      "sha512": "cbUQmzKpLI5lJ5hL7ijeoZnw7hHerlWfC0wMI6BAzG6/Ily+exUHoM3SGR1838+JeJs0BzIarMPSsQiVKKMVQQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.usersecrets/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.props",
+        "build/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.targets",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.UserSecrets.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.UserSecrets.xml",
+        "microsoft.extensions.configuration.usersecrets.3.1.4.nupkg.sha512",
+        "microsoft.extensions.configuration.usersecrets.nuspec"
+      ]
+    },
     "Microsoft.Extensions.DependencyInjection/3.1.4": {
       "sha512": "dAWhz6BEjUFIVLUPbT1s1sUrPTwbUWdw2iBRRe3ej3xXcKS+oo64dKrIWFxRjYP6TWyESpGFNY5NGeA5FcHVlg==",
       "type": "package",
@@ -2328,6 +2454,52 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "microsoft.extensions.dependencyinjection.abstractions.3.1.4.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/3.1.4": {
+      "sha512": "NNJA8JAoIaxlnb/bdQ8N0kA4T9ZaBAaUFM79pnT7j/x61Wne6K4lznU9u+NDgSAB3wrSx94mz169jNtle7KrSA==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.3.1.4.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Physical/3.1.4": {
+      "sha512": "vxBVwWxczp+5dnZ6FoulhxCLYzRjp5tu64iAlGMJtN0w7XLBZoY+6FvAnCRZDdwCbhVbz5VUPsbYVlL+l3sDxQ==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.physical/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "microsoft.extensions.fileproviders.physical.3.1.4.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/3.1.4": {
+      "sha512": "PGbPg8h8cUYXEovoeNvpHgdFhKnx/539E14zF1vxFz2V6cc1QmQGONbfVHEJcjbuyGyyiNyqgpPInymsVup7ow==",
+      "type": "package",
+      "path": "microsoft.extensions.filesystemglobbing/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "microsoft.extensions.filesystemglobbing.3.1.4.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.nuspec"
       ]
     },
     "Microsoft.Extensions.Logging/3.1.4": {
@@ -6553,6 +6725,7 @@
       "Microsoft.EntityFrameworkCore >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.4",
+      "Microsoft.Extensions.Configuration.UserSecrets >= 3.1.4",
       "MySql.Data.EntityFrameworkCore >= 8.0.20"
     ]
   },
@@ -6610,6 +6783,10 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.1.4, )"
+          },
+          "Microsoft.Extensions.Configuration.UserSecrets": {
             "target": "Package",
             "version": "[3.1.4, )"
           },

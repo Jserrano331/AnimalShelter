@@ -1,22 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AnimalShelter.Models
 {
-    public class Application
+    public partial class Application
     {
         public int Id { get; set; }
+        public int ApplicantId { get; set; }
+        public int AnimalId { get; set; }
+        public DateTime DateApplied { get; set; }
+        public short Adopted { get; set; }
+        public int EmployeeId { get; set; }
 
-        public int applicant_id { get; set; }
-
-        public int animal_id { get; set; }
-
-        public DateTime date_applied { get; set; }
-
-        public string adopted { get; set; }
-
-        public int employee_id { get; set; }
+        public virtual Animal Animal { get; set; }
+        public virtual Applicant Applicant { get; set; }
+        public virtual Employee Employee { get; set; }
     }
 }

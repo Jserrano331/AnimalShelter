@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AnimalShelter.Models
 {
-    public class Species
+    public partial class Species
     {
-        public int Id { get; set; }
+        public Species()
+        {
+            Animal = new HashSet<Animal>();
+        }
 
-        public string species { get; set; }
+        public int Id { get; set; }
+        public string Species1 { get; set; }
+
+        public virtual ICollection<Animal> Animal { get; set; }
     }
 }

@@ -1,30 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AnimalShelter.Models
 {
-    public class Animal
+    public partial class Animal
     {
+        public Animal()
+        {
+            Application = new HashSet<Application>();
+        }
+
         public int Id { get; set; }
+        public int SpeciesId { get; set; }
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public DateTime? Birthdate { get; set; }
+        public string Breed { get; set; }
+        public string Size { get; set; }
+        public string Color { get; set; }
+        public short? Neutered { get; set; }
+        public DateTime IntakeDate { get; set; }
 
-        public int species_id { get; set; }
-
-        public string name { get; set; }
-
-        public string gender { get; set; }
-
-        public DateTime birthdate { get; set; }
-
-        public string breed { get; set; }
-
-        public string size { get; set; }
-
-        public string color { get; set; }
-
-        public int neutered { get; set; }
-
-        public DateTime intake_date { get; set; }
+        public virtual Species Species { get; set; }
+        public virtual ICollection<Application> Application { get; set; }
     }
 }
