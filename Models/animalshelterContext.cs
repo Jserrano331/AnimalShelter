@@ -29,7 +29,7 @@ namespace AnimalShelter.Models
             if (!optionsBuilder.IsConfigured)
             {
                 // Connection string stored as secret and accessed with Configuration API
-                optionsBuilder.UseMySQL(_config["Secret"]);
+                optionsBuilder.UseMySQL(_config.GetConnectionString("MySQLConnections"));
             }
         }
 
