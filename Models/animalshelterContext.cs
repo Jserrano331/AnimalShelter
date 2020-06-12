@@ -7,15 +7,15 @@ namespace AnimalShelter.Models
 {
     public partial class animalshelterContext : DbContext
     {
-        private readonly IConfiguration _config;
+
         public animalshelterContext()
         {
         }
 
-        public animalshelterContext(DbContextOptions<animalshelterContext> options, IConfiguration config)
+        public animalshelterContext(DbContextOptions<animalshelterContext> options)
             : base(options)
         {
-            _config = config;
+
         }
 
         public virtual DbSet<Animal> Animal { get; set; }
@@ -28,8 +28,7 @@ namespace AnimalShelter.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                // Connection string stored as secret and accessed with Configuration API
-                optionsBuilder.UseMySQL(_config.GetConnectionString("MySQLConnections"));
+                //optionsBuilder.UseMySQL();
             }
         }
 
