@@ -11,7 +11,7 @@ namespace AnimalShelter.Models
         }
 
         public int Id { get; set; }
-        public string Species1 { get; set; }
+        public string Species_Type { get; set; }
 
         public virtual ICollection<Animal> Animal { get; set; }
     }

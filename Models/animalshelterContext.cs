@@ -244,7 +244,7 @@ namespace AnimalShelter.Models
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.Species1)
+                entity.Property(e => e.Species_Type)
                     .IsRequired()
                     .HasColumnName("species")
                     .HasMaxLength(45)
