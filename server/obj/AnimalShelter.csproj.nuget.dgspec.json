@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\AnimalShelter.csproj": {}
+    "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\server\\AnimalShelter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\AnimalShelter.csproj": {
+    "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\server\\AnimalShelter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\AnimalShelter.csproj",
+        "projectUniqueName": "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\server\\AnimalShelter.csproj",
         "projectName": "AnimalShelter",
-        "projectPath": "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\AnimalShelter.csproj",
+        "projectPath": "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\server\\AnimalShelter.csproj",
         "packagesPath": "C:\\Users\\jserr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\obj\\",
+        "outputPath": "C:\\Users\\jserr\\Documents\\PersonalProjects\\AnimalShelter\\server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
