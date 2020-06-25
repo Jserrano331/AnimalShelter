@@ -1,12 +1,14 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <Carousel></Carousel>
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import Carousel from "@/components/Carousel"
 export default {
   name: "Home",
-  components: {}
+  components: { Carousel }
 };
 </script>
